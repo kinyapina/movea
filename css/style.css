@@ -44,6 +44,13 @@ input {
 } 
 /*reset css*/
 
+@font-face {
+	font-family: 'Roboto'; 
+    font-style: normal;
+	font-weight: normal;
+	src: url(Roboto/Roboto-Regular.ttf) ;
+}
+
 .header {
     grid-area: my-header;
 }
@@ -59,9 +66,9 @@ input {
 .grid {
     display: grid;
     grid-template-areas:
-    "my-header my-header"
-    "my-aside my-main"
-    "my-aside my-main";
+    "my-header my-header my-header"
+    "my-aside my-main my-main"
+    "my-aside my-main my-main";
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     gap: 8rem 0;
 }
