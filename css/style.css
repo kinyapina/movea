@@ -51,6 +51,16 @@ input {
 	src: url(Roboto/Roboto-Regular.ttf) ;
 }
 
+.main-display_trailer:after, .trending_item:after, .popular_item:after {
+    content: '';
+    position: absolute;
+    display: block;
+    inset: 0;
+    border-radius: 1.6rem;
+    background: rgba(0,0,0,.4);
+    z-index: 0;
+}
+
 .header {
     grid-area: my-header;
 }
@@ -170,6 +180,10 @@ input {
     padding: 1.9rem 0 1.9rem 1.9rem;
 }
 
+.main-display_trailer_name {
+    z-index: 10;
+}
+
 .main-display_trailer_name span {
     display: block;
     font-weight: 700;
@@ -187,6 +201,7 @@ input {
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 119%;
+    z-index: 10;
 }
 
 .btn-wrap {
@@ -202,7 +217,7 @@ input {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    /*filter: blur(1.6rem); НА ПОДУМАТЬ*/
+    z-index: 10;
 }
 
 .btn_play {
@@ -284,6 +299,7 @@ input {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 1.6rem;
     padding: 0.3rem 1.3rem;
+    z-index: 10;
 }
 
 .trending_footer, .popular_footer {
@@ -295,6 +311,7 @@ input {
     padding: 1.8rem 1rem 1.8rem 6.4rem;
     border-radius: 1.6rem;
     background: rgba(255, 255, 255, 0.25);
+    z-index: 2;
 }
 
 .popular_footer {
@@ -387,10 +404,11 @@ input {
 }
 
 .popular_raiting span {
+    display: block;
     font-weight: 700;
-    font-size: 0.1rem;
     line-height: 120%;
     margin-left: 0.4rem;
+    font-size: 0.75rem
 }
 
 .popular_raiting img {
