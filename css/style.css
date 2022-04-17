@@ -256,7 +256,7 @@ input {
     height: 1rem;
 }
 
-.trending {
+.trending, .popular {
     display: flex;
     justify-content: space-between;
 }
@@ -286,7 +286,7 @@ input {
     padding: 0.3rem 1.3rem;
 }
 
-.trending_footer {
+.trending_footer, .popular_footer {
     position: relative;
     width: 100%;
     display: flex;
@@ -294,6 +294,11 @@ input {
     align-items: center;
     padding: 1.8rem 1rem 1.8rem 6.4rem;
     border-radius: 1.6rem;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.popular_footer {
+    padding: 0.8rem 1.9rem 0.8rem 4.7rem;
     background: rgba(255, 255, 255, 0.25);
 }
 
@@ -326,6 +331,12 @@ input {
     left: 7%;
 }
 
+.small-popular {
+    width: 3rem;
+    height: 3rem;
+    left: 8%;
+}
+
 .btn-wrap.small .btn_play {
     width: 0;
     height: 0;
@@ -333,6 +344,58 @@ input {
     border-left: 1.5rem solid #ffffff;
     border-bottom: 1rem solid transparent;
     border-radius: 0.2rem;
+}
+
+.popular_item {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 31%;
+    height: 19.2rem;    
+    background: url(../img/popular_bg_item.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.6rem;
+}
+
+.btn-wrap.small-popular .btn_play {
+    width: 0;
+    height: 0;
+    border-top: 0.8rem solid transparent;
+    border-left: 0.9rem solid #ffffff;
+    border-bottom: 0.8rem solid transparent;
+    border-radius: 0.2rem;
+}
+
+.popular_footer_title_header {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 120%;
+}
+
+.popular_footer_title_date {
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 112.5%;
+}
+
+.popular_raiting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular_raiting span {
+    font-weight: 700;
+    font-size: 0.1rem;
+    line-height: 120%;
+    margin-left: 0.4rem;
+}
+
+.popular_raiting img {
+    width: 1rem;
+    height: 1rem;
 }
 
 
