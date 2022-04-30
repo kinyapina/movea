@@ -416,6 +416,57 @@ input {
     height: 1rem;
 }
 
+.aside {
+    padding-right: 5.9rem;
+}
+
+.aside_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.6rem;
+}
+
+.aside_header {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 115%;
+}
+
+.aside_sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 114%;
+}
+
+.aside_sort_select {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.aside_sort_text {
+    color: rgba(255, 255, 255, 0.4);
+    margin-right: 1.5rem;
+}
+
+.aside_sort_select span {
+    display: block;
+}
+
+.aside_sort_select_img {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.4rem;
+    width: 0.7rem;
+    height: 0.7rem; 
+    cursor: pointer;   
+}
+
+.aside_sort_select_img img:nth-child(1) {
+    margin-bottom: 0.3rem;
+}
 
 /*сетка медиазапросов*/
 @media (max-width: 108em) {
