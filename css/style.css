@@ -51,7 +51,7 @@ input {
 	src: url(Roboto/Roboto-Regular.ttf) ;
 }
 
-.main-display_trailer:after, .trending_item:after, .popular_item:after {
+.main-display_trailer:after, .trending_item:after, .popular_item:after, .aside_item:after {
     content: '';
     position: absolute;
     display: block;
@@ -467,6 +467,122 @@ input {
 .aside_sort_select_img img:nth-child(1) {
     margin-bottom: 0.3rem;
 }
+.aside_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 22.6rem;
+    padding: 1.9rem 0 1.9rem 1.9rem;
+    border-radius: 1.5rem;
+    background: url(../img/aside_views_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.aside_item:nth-child(3) {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.aside_item_views {
+    position: relative;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 119%;
+    z-index: 10;
+}
+
+.aside_item_footer {
+    position: relative;
+    z-index: 10;
+}
+
+.aside_item_footer_name {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 117%;
+    margin-bottom: 0.5rem;
+}
+
+.aside_item_footer_date {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 114%;
+}
+
+.aside_bottom {
+    width: 100%;
+    padding: 2.5rem 0 2rem 0;
+    background: rgba(255, 255, 255, 0.02);;
+}
+
+.aside_bottom_fav_genres span{
+    display: block;
+    font-size: 2rem;
+    line-height: 115%;
+    margin-bottom: 2rem;
+}
+
+.aside_bottom_list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding-right: 4rem;
+}
+
+.aside_bottom_list_item {
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    line-height: 117%;
+}
+
+.purple {
+    background: #8066F6;
+}
+
+.orange {
+    background: #E1784F;;
+}
+
+.blue {
+    background: #63CFE1;
+}
+
+.grey {
+    background: #2B2A2F;
+}
+
+.aside_bottom_fav_genres {
+    margin-bottom: 6rem;
+}
+
+.aside_bottom_footer_add {
+    display: flex;
+    margin-bottom: 2.1rem;
+    font-size: 1.4rem;
+    line-height: 114%;
+    cursor: pointer;
+}
+
+.aside_bottom_footer_add span{
+    margin-left: 0.5rem;
+}
+
+.aside_bottom_footer_add_plus {
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    background: #2B2A2F;
+    border-radius: 50%;
+    padding: 0.1rem 0.5rem;
+}
+
 
 /*сетка медиазапросов*/
 @media (max-width: 108em) {
