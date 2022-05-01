@@ -63,6 +63,7 @@ input {
 
 .header {
     grid-area: my-header;
+    box-shadow: 0 0.4rem 1.0rem rgba(255, 255, 255, 0.07);
 }
 
 .aside {
@@ -80,7 +81,7 @@ input {
     "my-aside my-main my-main"
     "my-aside my-main my-main";
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    gap: 8rem 0;
+    gap: 3rem 0;
 }
 
 .grid-init {
@@ -163,6 +164,10 @@ input {
     height: 6rem;
     border-radius: 50%;
 
+}
+
+.main {
+    padding-top: 5rem;
 }
 
 .main-display_trailer {
@@ -417,7 +422,34 @@ input {
 }
 
 .aside {
-    padding-right: 5.9rem;
+    position: relative;
+    padding: 0 5.9rem 0 0;
+}
+
+.aside:after {
+    position: absolute;
+    content: url(../img/aside\ after\ arrow.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.2rem;
+    height: 2.6rem;
+    background: #FCFCFE;
+    border-radius: 2rem;
+    top: 10.7rem;
+    right: 5rem;
+    cursor: pointer;
+}
+
+.aside_wrap {
+    background: rgba(255, 255, 255, 0.02);
+    margin-left: -2.4rem;
+}
+
+.aside_top {
+   padding: 5rem 2.3rem 4rem 2.4rem;
+   background: #17161B;
+   border-right: 0.1rem solid #1C1B1F;
 }
 
 .aside_title {
@@ -467,6 +499,7 @@ input {
 .aside_sort_select_img img:nth-child(1) {
     margin-bottom: 0.3rem;
 }
+
 .aside_item {
     position: relative;
     display: flex;
@@ -483,7 +516,6 @@ input {
 
 .aside_item:nth-child(3) {
     margin-top: 3rem;
-    margin-bottom: 4rem;
 }
 
 .aside_item_views {
@@ -514,8 +546,7 @@ input {
 
 .aside_bottom {
     width: 100%;
-    padding: 2.5rem 0 2rem 0;
-    background: rgba(255, 255, 255, 0.02);;
+    padding: 2.5rem 0 2rem 2.4rem;
 }
 
 .aside_bottom_fav_genres span{
@@ -583,6 +614,43 @@ input {
     padding: 0.1rem 0.5rem;
 }
 
+.aside_bottom_footer {
+    position: relative;
+}
+
+.aside_bottom_footer:before {
+    content: '';
+    display: block;
+    width: 6.5rem;
+    height: 0.1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: -50%;
+    left: 0;
+    transform: translate(0, 50%);
+
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 3rem;
+    z-index: 100;
+    display: none;
+}
+
+.active {
+    display: flex;
+}
 
 /*сетка медиазапросов*/
 @media (max-width: 108em) {
